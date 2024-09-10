@@ -1,0 +1,8 @@
+- Database
+- Makefile
+- Dockerfile
+- Compose
+- Helmcharts
+- Pipeline
+- Tests
+- Write docs

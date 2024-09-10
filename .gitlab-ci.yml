@@ -1,0 +1,33 @@
+stages:
+  - lint
+  - test
+  - build
+  - package
+
+lint:
+  stage: lint
+  tags:
+    - docker
+  image: # golang linting image
+  script: # lint files
+
+test:
+  stage: test
+  tags:
+    - docker
+  image: # golang test image
+  script: # run tests
+
+build:
+  stage: build
+  tags:
+    - docker
+  image: # golang build image
+  script: # docker in docker build
+
+package:
+  stage: package
+  tags:
+    - docker
+  image: # golang package image
+  script: # package helmcharts

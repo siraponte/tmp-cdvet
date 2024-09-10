@@ -1,0 +1,12 @@
+env: "dev" # dev, develop, development, prod, production, test, testing
+
+app:
+  http:
+    host: localhost
+    port: 8000
+    backend_url: http://localhost:8000/api/ # Used to notify the client of the server's address
+  openapi:
+    enabled: true
+    doc_file_loc: "openapi/swagger.json"
+  logging:
+    level: "debug"

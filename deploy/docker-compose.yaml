@@ -1,0 +1,12 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: ko2dev.azurecr.io/cdvet-be:local
+    volumes:
+      - type: bind
+        source: ../config/application.compose.yaml
+        target: /application.yaml
+    ports:
+      - "8000:8000"
